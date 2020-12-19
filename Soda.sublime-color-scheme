@@ -3,7 +3,7 @@
   "uuid": "BF4E1964-0DB9-4E88-8142-E8F52D7EDEEC",
   "globals": {
     "background": "#ffffff",
-    "caret": "#000000",
+    "caret": "#00bbff",
     "find_highlight": "#ffe792",
     "find_highlight_foreground": "#000000",
     "foreground": "#333333",
@@ -17,7 +17,7 @@
     {
       "name": "Meta Mapping: Key",
       "scope": "meta.mapping.key string, meta.mapping.key punctuation.definition.string.begin.json, meta.mapping.key punctuation.definition.string.end.json",
-      "background": "#f3f2ff",
+      // "background": "#f3f2ff",
       "background": "#ffffff",
       "foreground": "#7653c1",
       "font_style": "normal"
@@ -294,6 +294,43 @@
       "name": "SublimeLinter Warning",
       "scope": "sublimelinter.mark.warning",
       "foreground": "#f6a620"
-    }
+    },
+
+    // Better Ruby's Yard specific
+    {
+      "name": "Markup: Strong",
+      "scope": "markup.bold.yard",
+      "font_style": "bold",
+      "foreground": "#999"
+    },
+    {
+      "name": "Markup: Italic",
+      "scope": "markup.italic.yard",
+      "font_style": "italic",
+      "foreground": "#999"
+    },
+    {
+      "name": "Markup: Raw Code",
+      "scope": "markup.raw.inline.yard",
+      "background": "#e9eef2",
+      "foreground": "#2f6f9f",
+    },
+    {
+      "name": "Meta: Link",
+      "scope": "meta.link.yard",
+      "foreground": "#d44950",
+    },
+    {
+      "name": "Meta: URL",
+      "scope": "meta.link.url.yard",
+      "foreground": "#d44950",
+      "font_style": "underline"
+    },
+    {
+      "name": "Meta: Key",
+      "scope": "meta.mapping.key.yard",
+      "foreground": "#7653c1",
+      "font_style": "bold"
+    },
   ]
 }
