@@ -29,10 +29,10 @@ def to_css(color)
   "rgba(#{r}, #{g}, #{b}, #{alpha})"
 end
 
-template = <<~ERB
+template = <<~HTML
   <% colors.keys.each do |color| %>
     <div style="width: 25px; height: 25px; background: <%= to_css(color) %>"></div>
   <% end %>
-ERB
+HTML
 
 puts ERB.new(template).result(binding)
